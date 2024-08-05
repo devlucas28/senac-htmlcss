@@ -19,7 +19,7 @@ p{
 }
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 30px){
     p{
         background-color: black;
         color: yellow;
