@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+
+    <h1>Formulário</h1>
+
+    <form action="">
+        <div>
+           
+            <label for="">Nome:</label>
+            <input type=""  placeholder="Digite seu nome...">
+        
+        </div>
+            
+        <!-- atributo nome -->
+            <div>
+             
+                <label for="">Data de nascimento:</label>
+                <input type="text" name="age" placeholder="21/05/1996">
+           
+            </div>
+           
+        
+            <!-- Atributo label -->
+       
+        <div>
+           
+            <label for="age">Idade:</label>
+            <input type="text" name="age" placeholder="28 anos">
+       
+        </div>
+        
+         <!-- Limpando /resetando formulário -->
+         <input type="reset" value="Limpar">
+
+        <!-- Submite botão -->
+        <input type="submit" value="enviar">
+        <br> <br>
+
+        <!-- select -->
+        <div>
+         
+            <label for="Cidade">Selecione sua cidade:</label>
+            <select name="Cidade">
+            <option value="São Paulo">São Paulo</option>
+            <option value="Taboão da Serra">Taboão da Serra</option>
+            <option value="Osasco">Osasco</option>
+            </select>
+           
+        </div>
+
+        <!-- Selected -->
+        <div>
+          
+            <label for="selecao">Quem vai ganhar a libertadores?</label>
+            <select name="times" id="">
+                <option value="São Paulo" selected>São Paulo</option>
+                <option value="Palmeiras">Palmeiras</option>
+                <option value="Flamengo">Flamengo</option>
+                <option value="Botafogo">Botafogo</option>
+            </select>
+       
+        </div>
+
+        <!-- seleção de vários select -->
+
+    <div>
+        
+        <label for="acessorios">selecione os acessórios do seu computador</label>
+        <select name="acessorios" id="" multiple>
+            <option value="mouse">mouse</option>
+            <option value="teclado">teclado</option>
+            <option value="fone-ouvido">fone-ouvido</option>
+            <option value="webcan">webcan</option>
+        </select>
+   
+    </div>
+
+    <!-- textarea -->
+    <div>
+        
+        <label for="feedback">descreva o seu feedback sobre o nosso site:</label>
+        <textarea name="feedback" id="" cols="30" 
+        rows="10" placeholder="digite algo..."></textarea>
+   
+    </div>
+
+    <!-- Fieldset -->
+    <div>
+       
+        <fieldset>
+           
+            <legend>Insira o seu endereço:</legend>
+            <label for="rua">Rua</label>
+            <input type="text" name="rua">
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro">
+       
+        </fieldset>
+    </div>
+
+
+    <!-- datalist -->
+
+    <div>
+       
+        <label for="livro">selecione seu livro:</label>
+        <input type="text" list="livros" name="livro">
+    
+    
+    <datalist id="livros">
+        
+        <option value="crepusculo"></option>
+        <option value="harry potter e a pedra filosofal"></option>
+        <option value="a hospedeira"></option>
+        <option value="harry potter e o calice de fogo"></option>
+   
+    </datalist>
+    
+    </div>
+
+    <!-- password / senha -->
+    <div>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha">
+    
+    </div>
+
+      <!-- input radio -->
+      <div>
+        <label for="genero">Qual o seu Gênero:</label>
+        <div class="radio">
+            <input type="radio" value="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+        </div>
+        <div class="radio">
+            <input type="radio" value="naoBinario" name="genero">
+            <label for="naoBinario">naoBinario</label>
+        </div>
+      </div>
+
+      <!-- input Check box -->
+      <div>
+         <label for="linguasestrageiras">Quais linguas voces pretene estudar:</label>
+      </div>
+       <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="ingles"> 
+        <label for="Inglês">Inglês</label>
+
+       </div>
+
+       <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="ingles"> 
+        <label for="espanhol">espanhol</label>
+        
+       </div>
+       <div class="radio">
+        <input type="checkbox" name="linguasestrangeiras" value="ingles"> 
+        <label for="Alemão">Alemão</label>
+        
+       </div>
+
+       <!-- input data -->
+       <div>
+        <label for="datadenascimento">Data de nascimento</label>
+        <input type="date" name="datadenascimento" id="">
+       </div>
+
+       <!-- input file -->
+       <div>
+        <label for="arquivo">inserir o seu cúrriculo em PDF</label>
+        <input type="file" name="arquivo">
+       </div>
+
+
+        <!-- input number -->
+        <div>
+            <label for="certificados">quantos certificados você possui?</label>
+            <input type="number" name="certificados">
+        </div>
+
+        <!-- input e-mail -->
+        <div>
+            <label for="emailinserido" >envie seu e-mail</label>
+            <input type="email" name="emailinserido" placeholder="lucas1.waalace@.com">
+        </div>
+
+         <!-- atributo value-->
+         <div>
+            <label for="confirmaraula">
+                você assistiu a video aula de treinamento da empresa?</label>
+            <input type="text" name="confirmaraula"  value="que assistir a aula!" >
+        </div>
+
+         <!-- Disable-->
+         <div>
+            <p>informe seu RG</p>
+            <input type="text" value="não precisa preencher esse campo" disabled>
+         </div>
+
+         <!-- atributo palceholder -->
+         <div>
+            <label for="pesquisa">como achou nosso site?</label>
+            <input type="text" name="pesquisa" placeholder="no Google ou no Instagram"></label>
+         </div>
+
+         <!-- riqured -->
+         <div>
+            <label for="sobrenome">Digite o sobrenome</label>
+            <input type="text" name="sobrenome" placeholder="sobrenome completo" required>
+         </div>
+
+   
+   
+    </form>
+    
+</body>
+</html>
